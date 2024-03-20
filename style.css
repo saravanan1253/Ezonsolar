@@ -40,7 +40,7 @@ video{
 	}
 }
 nav{
-	height: 160px;
+	height: 140px;
 	width: 100%;
 	background-color: white;
 }
@@ -406,7 +406,9 @@ nav{
 	}
    }
 @media only screen and (max-width: 768px){
-	
+	.nav{
+		height: 100px;		
+	}
 	.navbar-nav {
 		cursor: pointer;
 		max-width: 100%;
