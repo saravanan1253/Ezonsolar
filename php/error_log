@@ -1,0 +1,5 @@
+[26-May-2024 11:19:40 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'ID' in 'field list' in /home4/solartracker/public_html/php/admin.php:165
+Stack trace:
+#0 /home4/solartracker/public_html/php/admin.php(165): mysqli_query(Object(mysqli), 'SELECT ID, firs...')
+#1 {main}
+  thrown in /home4/solartracker/public_html/php/admin.php on line 165
