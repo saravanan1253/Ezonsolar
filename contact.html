@@ -24,7 +24,7 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#"><img src="Solar Tracker_20240513_142859_0000 (1).png"></a>
+    <a class="navbar-brand" href="#"><img src="image/Solar Tracker_20240513_142859_0000 (1).png"></a>
       <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
        <span class="toggler-icon top-bar"></span>
   <span class="toggler-icon middle-bar"></span>
@@ -159,17 +159,16 @@
           </div>
           <!-- Submit Button -->
           <div class="contact-button">
-            <button type="submit" name="submit" onclick="openPopup()">Send Message</button>
-            <div class="popup" id="popup">
-              <img src="icons8-tick-480.png">
-              <h2>Thank You!</h2>
-              <p>Your details have been successfully submitted. Thanks!</p>
-              <button type="button" onclick="closePopup()">OK</button>
-            </div>
+            <button type="submit" name="submit">Send Message</button>
+            
           </div>
         </form>
       </div>  
     </div>
+    </div>
+    </div>
+  </div>
+</div>
 <div class="container-fluid" id="container-fluid-one">
 <div class="contact-map">
     <iframe class="googlemap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.3802209815467!2d77.0100280742257!3d11.010072854842255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba859d5c4683b51%3A0x21bebe51c4a0a3a6!2sEZON%20ENERGY%20SOLUTIONS%20(P)%20Ltd!5e0!3m2!1sen!2sin!4v1710246089550!5m2!1sen!2sin" width="800" height="600" style="border:0;" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -182,7 +181,7 @@
         <h5 class="text-uppercase mt-3 font-weight-bold" style="text-align: center"><strong> Ezon Solar Tracker (P) Ltd.</strong></h5>
 <div class="logo-holder">
         <div class="logo">
-  <img src="Solar Tracker_20240513_142859_0000 (1).png">
+  <img src="image/Solar Tracker_20240513_142859_0000 (1).png">
  </div>
  </div>
     <p style="color: black; font-weight: bold; text-align: center"></p>
@@ -386,7 +385,7 @@ nav{
   height: 80vh;
   width: 100vw;
   margin-top: 10px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('pexels-kindel-media-9875408.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('image/pexels-kindel-media-9875408.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -427,10 +426,10 @@ nav{
 .contact-text{
 	height: 350px;
 	width: 100%;
-	 margin: 0 !important;
+	margin: 0 !important;
     overflow-x: hidden !important;
 	background: rgb(180,179,58);
-   background: linear-gradient(28deg, rgba(180,179,58,1) 12%, rgba(37,253,29,1) 46%, rgba(16,11,182,1) 55%, rgba(252,176,69,1) 100%);
+    background: linear-gradient(28deg, rgba(180,179,58,1) 12%, rgba(37,253,29,1) 46%, rgba(16,11,182,1) 55%, rgba(252,176,69,1) 100%);
 	color: white;
 	display: flex;
 	justify-content: center;
@@ -460,7 +459,7 @@ nav{
 	border-radius: 5px;
    }
 .contact{
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('closeup-image-office-phone.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('image/closeup-image-office-phone.jpg');
 	width: 100%;
 	object-fit: cover;
 	background-position: center;
@@ -788,7 +787,8 @@ nav{
     } else{
       toTop.classList.remove("active");
     }
-  })
+  });
+  
   let lastScrollTop = 0;
   window.addEventListener("scroll", function() {
     let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
@@ -803,13 +803,7 @@ nav{
     lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
   });
   
-let popup = document.getElementById("popup");
-function openPopup(){
-    popup.classList.add("open-popup");
-}
-function closePopup(){
-    popup.classList.remove("open-popup");
-}
+
 </script>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
